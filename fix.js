@@ -20,4 +20,4 @@ function fixImports(dir) {
 }
 
 fixImports("./dist");
-console.log("✅ All import paths fixed!");
+console.log("All import paths fixed!");
