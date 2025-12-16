@@ -5,5 +5,7 @@ interface userInterface extends Document {
   name: string;
   avatarUrl?: string;
   globalRole: "user" | "admin" | "superadmin";
+  onboardingCompleted: boolean;
+  userProfile: any;
 }
 export default userInterface;

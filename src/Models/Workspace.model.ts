@@ -9,6 +9,11 @@ const workspaceSchema = new Schema<workspaceInterface>(
     billingCustomerId: { type: String }, // Stripe or other
     plan: { type: String, default: "free" },
     settings: { type: Schema.Types.Mixed },
+    trial: {
+      isActive: { type: Boolean, default: true },
+      startedAt: { type: Date, default: () => new Date() },
+      endsAt: { type: Date },
+    },
   },
   { timestamps: true }
 );

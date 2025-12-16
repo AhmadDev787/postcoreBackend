@@ -10,5 +10,6 @@ interface workspaceInterface extends Document {
   billingCustomerId: string;
   plan: string;
   settings?: workspaceSettings;
+  trial: { isActive: boolean; startedAt: Date; endsAt: Date };
 }
 export default workspaceInterface;
